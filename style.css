@@ -1,0 +1,385 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("https://i.pinimg.com/originals/8e/6e/06/8e6e06851cdeb6715b9e6651fec984fb.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://i.pinimg.com/originals/8e/6e/06/8e6e06851cdeb6715b9e6651fec984fb.jpg");
+  background-attachment: fixed;
+}
+
+body a {
+  color: #3333a1;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin: 20px auto;
+  width: 800px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: 1px solid black;
+  background: url("https://img.freepik.com/premium-photo/blank-crumpled-craft-paper-template_53876-138452.jpg?w=2000") no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 3px 4px 8px black;
+          box-shadow: 3px 4px 8px black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 650px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 460px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 400px;
+  }
+}
+
+.container .header {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 40px 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container .header {
+    padding: 30px 0 15px;
+  }
+}
+
+.container .header .header-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .container .header .header-image {
+    height: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .header .header-image {
+    height: 120px;
+  }
+}
+
+.container .header .header-text {
+  margin: 15px 0;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #3f3f3f;
+  text-shadow: 1px 1px #686868;
+}
+
+@media (max-width: 768px) {
+  .container .header .header-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .header .header-text {
+    font-size: 21px;
+    text-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .header .header-text {
+    font-size: 18px;
+  }
+}
+
+.container .undangan {
+  margin: 0 0 50px;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: cursive;
+  font-size: 17px;
+  color: #363636;
+}
+
+@media (max-width: 768px) {
+  .container .undangan {
+    padding: 10px 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .undangan {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .undangan {
+    padding: 10px 20px;
+  }
+}
+
+.container .undangan p, .container .undangan h2 {
+  margin: 20px 0;
+}
+
+.container .undangan table {
+  margin: 20px 30px;
+}
+
+.container .undangan table tr td {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .container .undangan table tr td {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .undangan table tr td {
+    padding: 10px 0;
+  }
+}
+
+.container .undangan ol {
+  list-style: decimal;
+}
+
+@media (max-width: 600px) {
+  .container .undangan ol {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .undangan ol {
+    padding: 10px 20px;
+  }
+}
+
+.container .undangan ol li {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.container .countdown-title {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #363636;
+}
+
+@media (max-width: 768px) {
+  .container .countdown-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .countdown-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .countdown-title {
+    font-size: 18px;
+  }
+}
+
+.container .countdown {
+  margin: 20px auto;
+  width: 600px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .container .countdown {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .countdown {
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .countdown {
+    width: 350px;
+  }
+}
+
+.container .countdown .hari, .container .countdown .jam, .container .countdown .menit, .container .countdown .detik {
+  width: 23%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #363636;
+  border-radius: 10px;
+  border: 1px solid #363636;
+}
+
+@media (max-width: 768px) {
+  .container .countdown .hari, .container .countdown .jam, .container .countdown .menit, .container .countdown .detik {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .countdown .hari, .container .countdown .jam, .container .countdown .menit, .container .countdown .detik {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .countdown .hari, .container .countdown .jam, .container .countdown .menit, .container .countdown .detik {
+    font-size: 16px;
+  }
+}
+
+.container .gMap {
+  margin: 10px auto;
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 600px;
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  .container .gMap {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .gMap {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .gMap {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+.container .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 600px;
+}
+
+@media (max-width: 600px) {
+  .container .gmap_canvas {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .gmap_canvas {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+.container footer {
+  padding: 50px 50px 20px;
+  text-align: right;
+  font-family: cursive;
+  font-size: 17px;
+  color: #363636;
+}
+/*# sourceMappingURL=style.css.map */

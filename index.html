@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul Website -->
+    <title>Surat Undangan Acara Wisuda STKIP AGAMA HINDU SINGARAJA</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/office/2x/graduation-cap.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <!-- Header Image -->
+            <div class="header-image">
+                <img src="logo-stkip.png" alt="logo">
+            </div>
+
+            <!-- Header Text -->
+            <h1 class="header-text">STKIP AGAMA HINDU SINGARAJA</h1>
+
+        </div>
+
+        <!-- Undangan -->
+        <div class="undangan">
+
+            <h3>Om Swastyastu</h3>
+            <p>Dengan hormat, Ketua STKIP Agama Hindu Singaraja mengharapkan kehadiran Saudara/i pada acara Wisuda
+                Sarjana
+                Ke-34 STKIP Agama Hindu Singaraja, yang akan diselenggarakan pada:</p>
+            <table>
+                <tr>
+                    <td>Tanggal</td>
+                    <td>: Minggu, 14 Agustus 2022</td>
+                </tr>
+                <tr>
+                    <td>Waktu</td>
+                    <td>: 9:00 WITA - Selesai</td>
+                </tr>
+                <tr>
+                    <td>Tempat</td>
+                    <td>: Aula STKIP AGAMA HINDU SINGARAJA</td>
+                </tr>
+                <tr>
+                    <td>Susunan Acara</td>
+                    <td>: <a target="_blank" href="susunan_acara.html">Lihat susunan acara</a></td>
+                </tr>
+            </table>
+            <p>Atas perhatian dan kehadiran Saudara/i, kami ucapkan terima kasih.</p>
+            <p>Om Santih, Santih, Santih Om</p>
+
+        </div>
+
+        <!-- Countdown -->
+        <h1 class="countdown-title">HITUNG MUNDUR ACARA</h1>
+
+        <div class="countdown">
+            <div class="hari">
+                <h2>0 Hari</h2>
+            </div>
+            <div class="jam">
+                <h2>0 Jam</h2>
+            </div>
+            <div class="menit">
+                <h2>0 Menit</h2>
+            </div>
+            <div class="detik">
+                <h2>0 Detik</h2>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="gMap">
+            <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=STKIP%20Agama%20Hindu%20Singaraja&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br><a
+                    href="https://www.embedgooglemap.net">google maps widget html</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Designed by <a target="_blank" href="https://instagram.com/madearyaastawa">someone</a></p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 14, 2022 09:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.querySelector('.hari h2').innerHTML = days + " Hari";
+            document.querySelector('.jam h2').innerHTML = hours + " Jam";
+            document.querySelector('.menit h2').innerHTML = minutes + " Menit";
+            document.querySelector('.detik h2').innerHTML = seconds + " Detik";
+
+            // If the count down is over, write some text 
+            if (distance <= 0) {
+                clearInterval(x);
+                document.querySelector('#day').innerHTML = "0";
+                document.querySelector('#hour').innerHTML = "0";
+                document.querySelector('#minute').innerHTML = "0";
+                document.querySelector('#second').innerHTML = "0";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
